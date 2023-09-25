@@ -91,7 +91,7 @@ const removeOldImage = (id, result) => {
             let filePath = __basedir + "/assets/" + res[0].img;
             try{
                 if(fs.existsSync(filePath)){
-                    fs.unlink(filePath, (e)=>{
+                    fs.unlink(filePath, (e)=>{  
                         if(e){
                             console.log("Error: " + e);
                             return;
